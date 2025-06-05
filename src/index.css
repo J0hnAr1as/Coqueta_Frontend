@@ -111,7 +111,7 @@ button:focus-visible {
 
 .fade-in {
   animation: fadeIn 0.5s ease-in;
-}
+  }
 
 /* Responsive */
 @media (max-width: 768px) {

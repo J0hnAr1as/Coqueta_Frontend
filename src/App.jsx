@@ -56,45 +56,45 @@ function App() {
                     <Navbar />
                     <main className="main-content">
                         <div className="container">
-                            <Routes>
-                                {/* Rutas Públicas */}
-                                <Route 
-                                    path="/" 
-                                    element={<HomePage />} 
-                                />
-                                <Route 
-                                    path="/login" 
-                                    element={
-                                        <PublicRoute>
-                                            <LoginPage />
-                                        </PublicRoute>
-                                    } 
-                                />
-                                <Route 
-                                    path="/register" 
-                                    element={
-                                        <PublicRoute>
-                                            <RegisterPage />
-                                        </PublicRoute>
-                                    } 
-                                />
-                                
-                                {/* Rutas Protegidas */}
-                                <Route 
-                                    path="/chat" 
-                                    element={
-                                        <ProtectedRoute>
-                                            <ChatPage />
-                                        </ProtectedRoute>
-                                    } 
-                                />
-                                
-                                {/* Redirección para rutas no encontradas */}
-                                <Route 
-                                    path="*" 
-                                    element={<NavigateToHomeOrChat />} 
-                                />
-                            </Routes>
+                    <Routes>
+                        {/* Rutas Públicas */}
+                        <Route 
+                            path="/" 
+                            element={<HomePage />} 
+                        />
+                        <Route 
+                            path="/login" 
+                            element={
+                                <PublicRoute>
+                                    <LoginPage />
+                                </PublicRoute>
+                            } 
+                        />
+                        <Route 
+                            path="/register" 
+                            element={
+                                <PublicRoute>
+                                    <RegisterPage />
+                                </PublicRoute>
+                            } 
+                        />
+                        
+                        {/* Rutas Protegidas */}
+                        <Route 
+                            path="/chat" 
+                            element={
+                                <ProtectedRoute>
+                                    <ChatPage />
+                                </ProtectedRoute>
+                            } 
+                        />
+                        
+                        {/* Redirección para rutas no encontradas */}
+                        <Route 
+                            path="*" 
+                            element={<NavigateToHomeOrChat />} 
+                        />
+                    </Routes>
                         </div>
                     </main>
                 </div>

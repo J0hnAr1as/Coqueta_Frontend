@@ -46,7 +46,7 @@ const MessageList = ({ messages }) => {
                     </div>
                     <div className="message-timestamp">
                         {formatTime(message.timestamp)}
-                    </div>
+                </div>
                 </motion.div>
             ))}
         </div>

@@ -27,7 +27,7 @@ const ChatWindow = () => {
                 const formattedHistory = history.map((msg, index) => ({
                     ...msg,
                     id: msg.id || `history-${Date.now()}-${index}`,
-                    timestamp: msg.timestamp || new Date().toISOString()
+                    timestamp: msg.timestamp || new Date().toISOString() 
                 }));
                 setMessages(formattedHistory);
             } catch (err) {
@@ -54,11 +54,11 @@ const ChatWindow = () => {
     const handleSendMessage = async (text) => {
         if (!text.trim()) return;
 
-        const userMessage = {
+        const userMessage = { 
             id: `user-${Date.now()}`,
             text,
-            sender: 'user',
-            timestamp: new Date().toISOString()
+            sender: 'user', 
+            timestamp: new Date().toISOString() 
         };
 
         setMessages(prev => [...prev, userMessage]);
@@ -67,7 +67,7 @@ const ChatWindow = () => {
 
         try {
             const { botResponse } = await chatService.sendMessage(text);
-            // Asegurarse de que la respuesta del bot también tenga un timestamp
+             // Asegurarse de que la respuesta del bot también tenga un timestamp
             const formattedBotResponse = {
                 ...botResponse,
                 id: `bot-${Date.now()}`,
