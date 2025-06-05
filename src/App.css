@@ -1,0 +1,188 @@
+/* src/index.css o App.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f6; /* Un color de fondo suave para la app */
+}
+
+.container {
+  max-width: 1200px; /* O el ancho que prefieras */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos globales de la aplicación */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+/* Estilos para las tarjetas de ejercicios y rutinas */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para los botones de acción */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+/* Estilos para las secciones de la página */
+.section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Estilos para los formularios */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Estilos para los mensajes de estado */
+.alert {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.alert-success {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.alert-error {
+  background-color: var(--error-color);
+  color: white;
+}
+
+/* Estilos para la navegación */
+.nav-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Estilos para el grid de ejercicios */
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* Estilos para los badges de categorías */
+.badge {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+/* Estilos para los iconos de ejercicios */
+.exercise-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* Estilos para las estadísticas */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

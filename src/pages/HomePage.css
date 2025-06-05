@@ -1,0 +1,76 @@
+/* src/pages/HomePage.css */
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.homepage-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.homepage-header p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.user-welcome h2, .guest-welcome h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.user-welcome p, .guest-welcome p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.homepage-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.homepage-button {
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.homepage-button.primary {
+    background-color: #007bff; /* Azul primario */
+    color: white;
+    border: 1px solid #007bff;
+}
+
+.homepage-button.primary:hover {
+    background-color: #0056b3;
+}
+
+.homepage-button.secondary {
+    background-color: #6c757d; /* Gris secundario */
+    color: white;
+    border: 1px solid #6c757d;
+}
+
+.homepage-button.secondary:hover {
+    background-color: #545b62;
+}
+
+.homepage-footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+}

@@ -1,0 +1,30 @@
+/* src/pages/ChatPage.css */
+.chat-page-container {
+    padding-top: 20px; /* Espacio si el Navbar es fijo o si quieres separación */
+    /* Otros estilos que desees para el contenedor de la página de chat */
+}
+
+.loading-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Si decides añadir un chat-page-header */
+.chat-page-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat-page-header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.chat-page-header p {
+    font-size: 1.1em;
+    color: #666;
+}
