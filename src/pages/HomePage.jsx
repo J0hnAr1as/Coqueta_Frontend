@@ -10,7 +10,7 @@ function HomePage() {
     return (
         <div className="homepage-container">
             <header className="homepage-header">
-                <h1>¡Bienvenido al Gimnasio Virtual con Big Sam!</h1>
+                <h1>¡Bienvenido al cómplice de tus sueños!</h1>
                 <p>Tu asistente de IA listo para ayudarte a reventar tus límites.</p>
             </header>
             
@@ -39,8 +39,8 @@ function HomePage() {
                 )}
             </main>
 
-            <footer className="homepage-footer">
-                <p>&copy; {new Date().getFullYear()} Gimnasio Big Sam. ¡A darle con todo!</p>
+            <footer className="footer">
+                <p>© 2025 Coqueta Store. ¡Un sueño cumplido!</p>
             </footer>
         </div>
     );

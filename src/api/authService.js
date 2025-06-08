@@ -1,11 +1,11 @@
 // src/api/authService.js
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001/api/auth';
+const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://coqueta-backend.vercel.app/api/auth';
 
 // Configuración global de Axios para incluir el token si está disponible
 const apiClient = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:5001/api',
+    baseURL: import.meta.env.VITE_API_BASE_URL || 'https://coqueta-backend.vercel.app/api',
 });
 
 export const setAuthToken = (token) => {
