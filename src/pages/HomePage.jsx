@@ -11,7 +11,7 @@ function HomePage() {
         <div className="homepage-container">
             <header className="homepage-header">
                 <h1>¡Bienvenido al cómplice de tus sueños!</h1>
-                <p>Tu asistente de IA listo para ayudarte a reventar tus límites.</p>
+                <p>Tu asistente de IA listo para ayudarte a cumplir tus sueños.</p>
             </header>
             
             <main className="homepage-content">
@@ -26,7 +26,6 @@ function HomePage() {
                 ) : (
                     <div className="guest-welcome">
                         <h2>¿Listo para empezar?</h2>
-                        <p>Únete a nuestra comunidad y obtén la ayuda de Big Sam para tus entrenamientos.</p>
                         <div className="homepage-actions">
                             <Link to="/login" className="homepage-button primary">
                                 Iniciar Sesión
