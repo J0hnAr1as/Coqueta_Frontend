@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { FaDumbbell, FaSignOutAlt, FaUser } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import CoquetaLogo from './CoquetaLogo';
 import './Navbar.css'; // Crea este archivo para estilos
 
 const Navbar = () => {
@@ -24,6 +25,7 @@ const Navbar = () => {
         >
             <div className="navbar-container">
                 <Link to="/" className="navbar-brand">
+                    <CoquetaLogo className="navbar-logo" size={35} />
                     <span>CoquetaAssistant</span>
                 </Link>
 
