@@ -24,7 +24,6 @@ const Navbar = () => {
         >
             <div className="navbar-container">
                 <Link to="/" className="navbar-brand">
-                    <FaDumbbell className="navbar-icon" />
                     <span>CoquetaAssistant</span>
                 </Link>
 
@@ -47,7 +46,7 @@ const Navbar = () => {
                                 <span>Iniciar Sesión</span>
                             </Link>
                             <Link to="/register" className="nav-button">
-                                <span>Registrarse</span>
+                                <span>Registrate</span>
                             </Link>
                         </>
                     )}

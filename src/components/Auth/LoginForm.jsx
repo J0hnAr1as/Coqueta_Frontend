@@ -33,35 +33,36 @@ function LoginForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="auth-form">
-            <h2>¡De Vuelta a la Carga!</h2>
-            {error && <p className="error-message">{error}</p>}
-            {message && <p className="success-message">{message}</p>}
-            
-            <div className="form-group">
-                <label htmlFor="email-login">Email:</label>
-                <input
-                    type="email"
-                    id="email-login" // Diferente id si ambos formularios estuvieran en la misma vista (no es el caso aquí)
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                />
-            </div>
-            
-            <div className="form-group">
-                <label htmlFor="password-login">Contraseña:</label>
-                <input
-                    type="password"
-                    id="password-login"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    required
-                />
-            </div>
-            
-            <button type="submit" className="auth-button">¡Entrar!</button>
-        </form>
+        <div className="login-form-container">
+            <form onSubmit={handleSubmit} className="auth-form">
+                {error && <p className="error-message">{error}</p>}
+                {message && <p className="success-message">{message}</p>}
+                
+                <div className="form-group">
+                    <label htmlFor="email-login">Email:</label>
+                    <input
+                        type="email"
+                        id="email-login" // Diferente id si ambos formularios estuvieran en la misma vista (no es el caso aquí)
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
+                </div>
+                
+                <div className="form-group">
+                    <label htmlFor="password-login">Contraseña:</label>
+                    <input
+                        type="password"
+                        id="password-login"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                    />
+                </div>
+                
+                <button type="submit" className="auth-button">¡Entrar!</button>
+            </form>
+        </div>
     );
 }
 

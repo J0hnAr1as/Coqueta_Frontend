@@ -6,11 +6,8 @@ import '../components/Auth/AuthForm.css'; // Reutiliza el CSS para el contenedor
 
 function LoginPage() {
     return (
-        <div className="auth-form-container">
+        <div className="login-page">
             <LoginForm />
-            <p className="auth-link">
-                ¿Nuevo en el gimnasio? <Link to="/register">¡Regístrate aquí, campeón!</Link>
-            </p>
         </div>
     );
 }

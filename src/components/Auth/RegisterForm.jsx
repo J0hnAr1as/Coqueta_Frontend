@@ -45,7 +45,7 @@ function RegisterForm() {
 
     return (
         <form onSubmit={handleSubmit} className="auth-form">
-            <h2>¡Únete al Equipo!</h2>
+            <h2>¡Únete al capricho!</h2>
             {error && <p className="error-message">{error}</p>}
             {message && <p className="success-message">{message}</p>}
             

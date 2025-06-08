@@ -8,9 +8,6 @@ function RegisterPage() {
     return (
         <div className="auth-form-container">
             <RegisterForm />
-            <p className="auth-link">
-                ¿Ya tienes una cuenta, máquina? <Link to="/login">¡Inicia Sesión!</Link>
-            </p>
         </div>
     );
 }

@@ -31,7 +31,7 @@ function HomePage() {
                                 Iniciar Sesión
                             </Link>
                             <Link to="/register" className="homepage-button secondary">
-                                Registrarse
+                                Registrate
                             </Link>
                         </div>
                     </div>
