@@ -42,10 +42,11 @@ function LoginForm() {
                     <label htmlFor="email-login">Email:</label>
                     <input
                         type="email"
-                        id="email-login" // Diferente id si ambos formularios estuvieran en la misma vista (no es el caso aquí)
+                        id="email-login"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
+                        placeholder="Ingresa tu email"
                     />
                 </div>
                 
@@ -57,10 +58,11 @@ function LoginForm() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
+                        placeholder="Ingresa tu contraseña"
                     />
                 </div>
                 
-                <button type="submit" className="auth-button">¡Entrar!</button>
+                <button type="submit" className="auth-button">Entrar</button>
             </form>
         </div>
     );
